@@ -1,0 +1,53 @@
+#box {
+  width: 120px;
+  height: 400px;
+  background: darkgoldenrod;
+  cursor: pointer;
+  position: relative;
+  left: 40%;
+  top: 150px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+.kuji {
+  position: absolute;
+  left: 12%;
+  bottom: 100%;
+  width: 90px;
+  height: 0;
+  background: darkorange;
+  overflow: hidden;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+.kuji2 {
+  height: 100px;
+  transition: 0.5s;
+}
+.omi {
+  animation: omi 5s;
+}
+@keyframes omi {
+20% {
+  transform: rotate(10deg);
+}
+40% {
+  transform: rotate(-10deg);
+}
+60% {
+  transform: rotate(10deg);
+}
+  80% {
+  transform: rotate(-10deg);
+}
+  100% {
+  transform: rotate(0deg);
+    }
+}
+.omi:hover {
+ opacity: 0.8; 
+}
