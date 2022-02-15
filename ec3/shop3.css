@@ -1,0 +1,47 @@
+body {
+    background-color: #ccc;
+    font-size: 16px;
+    color: #666;
+}
+
+p, form {
+    margin: 0;
+    padding: 6px 0;
+}
+
+h1 {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 35px;
+    text-align: center;
+}
+table {
+    width: 550px;
+    margin: 17px auto;
+    padding: 0;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+th, td {
+    margin: 0;
+    padding: 7px 17px;
+    border-bottom: 15px solid #ccc;
+}
+
+.goods {
+    font-weight: bold;
+}
+.base {
+    width: 500px;
+    margin: 16px auto;
+    padding: 10px;
+    background-color: #aaa;
+}
+.error {
+    font-weight: bold;
+    color: #c6c;
+}
