@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div id="wrapper">
+      <h1>My Todo</h1>
+
+      <div id="tab">
+        <div class="tab-list">
+          <button data-target="inbox">インボックス</button>
+        </div>
+
+        <div class="tab-list">
+          <button data-target="done">完了のタスク</button>
+        </div>
+
+        <div class="tab-list">
+          <select id="sort-menu">
+            <option value="create-desc">登録日↓</option>
+            <option value="create-asc">登録日↑</option>
+            <option value="priority-desc">優先度↓</option>
+            <option value="priority-asc">優先度↑</option>
+          </select>
+        </div>
+      </div>
+
+      <table id="todo-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Todo</th>
+            <th>登録日</th>
+            <th>優先度</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="todo-main">
+          <tr></tr>
+        </tbody>
+      </table>
+
+      <form id="input-form">
+        <div class="tab-list">
+          <label for="input-text">Todo</label>
+          <input type="text" id="input-text" name="todo-next" placeholder="ズボンを買う">
+        </div>
+
+        <div class="submit">
+          <button type="submit">登録</button>
+        </div>
+      </form>
+
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
